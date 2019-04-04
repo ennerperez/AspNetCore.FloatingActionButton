@@ -1,36 +1,4 @@
-﻿@{
-    var qactions = new FloatingAction
-    {
-        Icon = "fas fa-bolt fa-2x",
-        Url = "#",
-        Title = "Acciones Rápidas",
-        Class = "btn-success"
-    };
-    qactions.Actions.Add(new FloatingAction()
-    {
-        Title = "Index",
-        Icon = "fas fa-plus",
-        Url = "/Index",
-        Class = "btn-danger"
-    });
-    qactions.Actions.Add(new FloatingAction()
-    {
-        Title = "Privacy",
-        Icon = "fas fa-truck",
-        Url = "/Privacy",
-//        Class = "btn-success"
-    });
-    qactions.Actions.Add(new FloatingAction()
-    {
-        Title = "Google",
-        Icon = "fas fa-child",
-        Url = "http://www.google.com/",
-        Target = "_blank",
-//        Class = "btn-secondary"
-    });
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -64,10 +32,11 @@
             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Examples/TagHelper">Tag helper</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Examples/Component">Component</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +52,7 @@
 
 <footer class="border-top footer text-muted">
     <div class="container">
-        &copy; 2019 - Demo - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        &copy; 2019 - Enner Pérez - <a asp-area="" asp-page="/License">License</a>
     </div>
 </footer>
 
@@ -108,10 +77,6 @@
     <script src="~/lib/font-awesome/js/all.min.js"></script>
 </environment>
 <script src="~/js/site.js" asp-append-version="true"></script>
-
-<FloatingActionButton model="@qactions" ></FloatingActionButton>
-
-@*@await Component.InvokeAsync("FloatingActionButton", qactions)*@
 
 @RenderSection("Scripts", required: false)
 </body>

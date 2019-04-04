@@ -7,10 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FloatingActionButton.Demo.Pages
 {
-    public class PrivacyModel : PageModel
+    public class ComponentModel : PageModel
     {
         public void OnGet()
         {
+
         }
     }
 }
