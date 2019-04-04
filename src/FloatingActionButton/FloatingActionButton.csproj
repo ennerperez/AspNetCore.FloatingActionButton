@@ -3,11 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Microsoft.AspNetCore</RootNamespace>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>Enner Pérez</Authors>
     <Company>Personal</Company>
     <Description>Floating Action Button for ASP.NET Core</Description>
     <Copyright>Enner Pérez</Copyright>
+    <PackageProjectUrl>https://github.com/ennerperez/AspNetCore.FloatingActionButton</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/ennerperez/AspNetCore.FloatingActionButton/master/src/.editoricon.png</PackageIconUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageTags>ASP.NET Core Floating Action Button</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>AspNetCore.FloatingActionButton</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
