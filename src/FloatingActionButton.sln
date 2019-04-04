@@ -1,8 +1,13 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.102
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F2848700-C8F6-419E-9D2A-FF3590CA7AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FloatingActionButton", "FloatingActionButton\FloatingActionButton.csproj", "{54CDE4FC-D967-423E-89F4-5BB0290398E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FloatingActionButton.Demo", "FloatingActionButton.Demo\FloatingActionButton.Demo.csproj", "{F7523727-03D3-4B2D-95D1-FA13E001F798}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9FE42FDA-F776-4C7E-8315-74431346216C}"
 	ProjectSection(SolutionItems) = preProject
 		..\.gitattributes = ..\.gitattributes
 		..\.gitignore = ..\.gitignore
@@ -15,10 +20,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54CDE4FC-D967-423E-89F4-5BB0290398E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CDE4FC-D967-423E-89F4-5BB0290398E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CDE4FC-D967-423E-89F4-5BB0290398E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CDE4FC-D967-423E-89F4-5BB0290398E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7523727-03D3-4B2D-95D1-FA13E001F798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7523727-03D3-4B2D-95D1-FA13E001F798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7523727-03D3-4B2D-95D1-FA13E001F798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {180de274-0d9f-4f8d-879f-b7dc65004f92}
+		SolutionGuid = {3CF2BE20-89EA-4027-92FA-285A101E23B1}
 	EndGlobalSection
 EndGlobal

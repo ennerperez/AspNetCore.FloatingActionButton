@@ -1,0 +1,11 @@
+﻿@page
+@model LicenseModel
+@{
+    ViewData["Title"] = "License";
+}
+<h1>@ViewData["Title"]</h1>
+<hr />
+
+<textarea id="license" class="form-control" disabled  rows="20">
+    @Model.License
+</textarea>

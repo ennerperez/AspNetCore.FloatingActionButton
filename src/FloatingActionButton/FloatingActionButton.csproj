@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Microsoft.AspNetCore</RootNamespace>
+    <Authors>Enner Pérez</Authors>
+    <Company>Personal</Company>
+    <Description>Floating Action Button for ASP.NET Core</Description>
+    <Copyright>Enner Pérez</Copyright>
+    <PackageProjectUrl>https://github.com/ennerperez/AspNetCore.FloatingActionButton</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/ennerperez/AspNetCore.FloatingActionButton/master/src/.editoricon.png</PackageIconUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageTags>ASP.NET Core Floating Action Button</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>AspNetCore.FloatingActionButton</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\**" />
+    <Content Remove="Areas\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <None Remove="Areas\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  </ItemGroup>
+</Project>

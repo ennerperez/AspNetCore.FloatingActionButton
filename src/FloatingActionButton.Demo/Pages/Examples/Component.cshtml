@@ -1,0 +1,42 @@
+﻿@page
+@model ComponentModel
+@{
+    ViewData["Title"] = "Component demo page";
+}
+
+@using Microsoft.AspNetCore.Mvc.Models
+
+@{
+    var qActions = new FloatingAction
+    {
+        Icon = "fas fa-bolt fa-2x",
+        Url = "#",
+        Title = "Quick actions",
+        Class = "btn-success"
+    };
+    qActions.Actions.Add(new FloatingAction()
+    {
+        Title = "Index",
+        Icon = "fas fa-plus",
+        Url = "/Index",
+        Class = "btn-danger"
+    });
+    qActions.Actions.Add(new FloatingAction()
+    {
+        Title = "Privacy",
+        Icon = "fas fa-truck",
+        Url = "/Privacy",
+    });
+    qActions.Actions.Add(new FloatingAction()
+    {
+        Title = "Google",
+        Icon = "fas fa-child",
+        Url = "http://www.google.com/",
+        Target = "_blank",
+    });
+}
+
+<div class="text-center">
+    <h1 class="display-4">This is a component implementation</h1>
+    @await Component.InvokeAsync("FloatingActionButton", qActions)
+</div>
